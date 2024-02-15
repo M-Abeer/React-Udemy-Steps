@@ -21,7 +21,7 @@ const App = () => {
     }
   }
   function change() {
-    setStep((is) => !is);
+    setIsOpen((is) => !is);
   }
   return (
     <>
