@@ -12,16 +12,16 @@ const App = () => {
 
   function previous() {
     if (step > 1) {
-      setStep(step - 1);
+      setStep((s) => step - 1);
     }
   }
   function next() {
     if (step < 3) {
-      setStep(step + 1);
+      setStep((s) => step + 1);
     }
   }
   function change() {
-    setIsOpen(!isOpen);
+    setStep((is) => !is);
   }
   return (
     <>
