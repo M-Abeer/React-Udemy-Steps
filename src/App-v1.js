@@ -39,14 +39,18 @@ const App = () => {
             Step {step}: {messages[step - 1]}
           </p>
           <div className="buttons">
-            <Button bgColor="#7950f2" textColor="#fff" onClick={previous}>
-              <span>👈</span> Previous
-            </Button>
-
-            <Button bgColor="#7950f2" textColor="#fff" onClick={next}>
-              Next <span>👉</span>
-              <span>🤓</span>
-            </Button>
+            <button
+              style={{ backgroundColor: "#7950f2", color: "#fff" }}
+              onClick={previous}
+            >
+              Previous
+            </button>
+            <button
+              style={{ backgroundColor: "#7950f2", color: "#fff" }}
+              onClick={next}
+            >
+              Next
+            </button>
           </div>
         </div>
       ) : (
@@ -57,14 +61,3 @@ const App = () => {
 };
 
 export default App;
-
-function Button({ textColor, bgColor, onClick, children }) {
-  return (
-    <button
-      style={{ backgroundColor: bgColor, color: textColor }}
-      onClick={onClick}
-    >
-      {children}]
-    </button>
-  );
-}
